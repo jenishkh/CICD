@@ -24,8 +24,8 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
         
       - name: Restore NuGet Packages
-        working-directory: ./CICD
-        run: nuget restore WebApplication1.sln
+        #working-directory: ./CICD
+        run: dotnet restore
         
-      - name: Build Solution
-        run: msbuild CICD/WebApplication1.sln
+      #- name: Build Solution
+       # run: msbuild CICD/WebApplication1.sln
