@@ -20,12 +20,12 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.0.2
         
-      #- name: Setup NuGet
-       # uses: NuGet/setup-nuget@v1.0.5
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1.0.2
         
       - name: Restore NuGet Packages
         #working-directory: ./CICD
-        run: dotnet restore WebApplication1.sln
+        run: nuget restore WebApplication1.sln
         
       #- name: Build Solution
        # run: msbuild CICD/WebApplication1.sln
