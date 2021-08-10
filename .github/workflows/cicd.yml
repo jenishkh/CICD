@@ -27,5 +27,5 @@ jobs:
         #working-directory: ./CICD
         run: nuget restore WebApplication1/WebApplication1.sln
         
-      #- name: Build Solution
-       # run: msbuild CICD/WebApplication1.sln
+      - name: Build Solution
+        run: msbuild WebApplication1/WebApplication1.sln
