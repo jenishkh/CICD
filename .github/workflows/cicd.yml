@@ -24,7 +24,7 @@ jobs:
        # uses: NuGet/setup-nuget@v1.0.5
         
       - name: Restore NuGet Packages
-        working-directory: ./CICD
+        #working-directory: ./CICD
         run: dotnet restore
         
       #- name: Build Solution
