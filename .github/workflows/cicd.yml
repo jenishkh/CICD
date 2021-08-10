@@ -28,4 +28,4 @@ jobs:
         run: nuget restore WebApplication1/WebApplication1.sln
         
       - name: Build Solution
-        run: msbuild WebApplication1/WebApplication1.sln
+        run: msbuild WebApplication1/WebApplication1.sln /p:Configuration=Release
