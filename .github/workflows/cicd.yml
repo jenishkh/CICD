@@ -24,7 +24,7 @@ jobs:
         
       - name: Restore NuGet Packages
         #working-directory: ./AutoPublishDemo
-        run: nuget restore WebApplication1.sln
+        run: dotnet restore WebApplication1.sln
         
       - name: Build Solution
         run: msbuild WebApplication1.sln
